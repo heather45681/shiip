@@ -1,0 +1,129 @@
+
+.wrapper{
+    padding-top: 100px;
+}
+
+//about
+.about{
+    padding-top: 8rem;
+    background: $main-color;
+    color: #fff;
+}
+
+.a_table{
+    display: table;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.a_block{
+    display: table-cell;
+    padding: .5%;
+    vertical-align: top;
+    box-sizing: border-box;
+    h1{
+        letter-spacing: 1rem;
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+    h6{
+        letter-spacing: .15rem;
+        padding: 1rem 0;
+        padding-right: 1rem;
+    }
+    p{
+        line-height: 1.5rem;
+
+    }
+}
+
+.w35{
+    width: 35%;
+}
+
+.w65{
+    width: 65%;
+}
+
+//faq
+.faq{
+    .c_title{        
+        font-size: 4.5rem;
+        font-weight: 100;       
+    }
+}
+
+.faq_block{
+    max-width: 960px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 5rem 1rem;
+    h1{
+        font-size: 2rem;
+        color: $main-color;
+        letter-spacing: .3rem;
+        margin-bottom: 2rem;
+        line-height: 3rem;
+    }
+    h6{
+        line-height: 2rem;
+        color: $text-color;
+        a{  
+            display: block;
+            color: $main-color;
+            transition: .2s;
+            -webkit-transition: .2s;
+            -moz-transition: .2s;
+            &:hover{
+                color: $hover-color;
+                transition: .2s;
+                -webkit-transition: .2s;
+                -moz-transition: .2s;
+            }
+            span{
+                font-size: 1.75rem;
+            }
+        }
+    }
+}
+
+@mixin page--md(){
+
+    .about{
+        padding: 5rem 1rem;
+    }
+
+    .a_table{
+        width: 100%;
+    }
+
+    .a_block{
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 0;
+        h1{
+            font-size: 2rem;
+            line-height: 2.5rem;
+        }
+        &.w35{
+            border-bottom: 1px solid #fff;
+        }
+        &.w65{
+            padding-top: 1.5rem; 
+        }
+    }
+
+    .faq{
+        .c_title{        
+            font-size: 3rem;   
+        }
+    }
+
+    .faq_block{
+        padding: 3rem 1.5rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}

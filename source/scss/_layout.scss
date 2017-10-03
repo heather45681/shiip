@@ -1,0 +1,132 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    background-color: $bg-color;
+    color: $font-color;      
+}
+
+body a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    font-size: 1.75rem;
+}
+
+h2 {
+    font-size: 1.625rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.375rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1.125rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.f_bold {
+    font-weight: bold;
+}
+
+.fl_r {
+    float: right;
+}
+
+.fl_l {
+    float: left;
+}
+
+.text_l {
+    text-align: center;
+}
+
+.text_r {
+    text-align: right;
+}
+
+.text_c {
+    text-align: center;
+}
+
+.img_rwd{
+    max-width: 100%;
+    height: auto;
+}
+
+//clearfix 清除浮動
+%clearfix {
+    &:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+//間距
+//大title
+$mb_title:2rem;
+
+//mobile物件. 平板物件 (在pc版消失)
+.thing_mobile, .thing_ipad{
+    display: none;
+}
+
+@mixin body--md(){
+    body{
+        font-size: 17px;
+    }
+
+    //斷行
+    span.block_md{
+        display: block;
+    }
+
+    //pc物件 (在平板消失)
+    .thing_pci{
+        display: none;
+    }
+
+    //平板物件 (在平板出現)
+    .thing_ipad{
+        display: block;
+    }
+    
+}
+
+@mixin body--sm(){
+    body{
+        font-size: 18px;
+    }
+
+    //斷行
+    span.block_sm{
+        display: block;
+    }
+
+    //pc物件 (在手機版消失)
+    .thing_pcm{
+        display: none;
+    }
+
+    //mobile物件 (在手機版出現)
+    .thing_mobile{
+        display: block;
+    }
+}
