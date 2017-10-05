@@ -4,6 +4,7 @@
     top: 50%;
     transform: translateY(-50%);
     right: 1.5rem;
+    z-index: 9999;
     a{
         display: block;
         width: 30px;
@@ -158,12 +159,22 @@
     box-sizing: border-box;
     &.fi_focus{
         color: $main-color;
-        z-index: 99;
+        z-index: 999;
         .fi_answer{
             border-bottom: 2px solid $main-color;
         }
         .fi_select{
             display: block;
+        }
+    }
+    &.fi_done{
+        color: $main-color;        
+        z-index: 99;
+        .fi_answer{
+            border-bottom: 2px solid $main-color;
+        }
+        .fi_select{
+            display: none;
         }
     }
 }
@@ -216,13 +227,16 @@
         outline: 0;
         border: 0;
         width: 100%;
-        font-size: 0.875rem;
-        font-family: 'Raleway', sans-serif;
-        line-height: 1rem;
-        box-sizing: border-box;
-        margin-top: .4rem;
-
     }
+}
+
+.fia_txt{
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    box-sizing: border-box;
+    padding-top: .4rem;
+    color: $text-color;
 }
 
 .f_check{

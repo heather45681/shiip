@@ -60,7 +60,7 @@ footer p { color: #fff; line-height: 1.5rem; padding: 3rem 0 0 0; }
 
 img.f_logo { width: 95px; }
 
-.sidemenu { position: fixed; top: 50%; transform: translateY(-50%); right: 1.5rem; }
+.sidemenu { position: fixed; top: 50%; transform: translateY(-50%); right: 1.5rem; z-index: 9999; }
 
 .sidemenu a { display: block; width: 30px; height: 30px; position: relative; margin-bottom: 15px; }
 
@@ -112,11 +112,17 @@ img.f_logo { width: 95px; }
 
 .f_item { position: relative; z-index: 0; padding: .5rem 0; color: #777777; height: 72px; box-sizing: border-box; }
 
-.f_item.fi_focus { color: #ff5c5c; z-index: 99; }
+.f_item.fi_focus { color: #ff5c5c; z-index: 999; }
 
 .f_item.fi_focus .fi_answer { border-bottom: 2px solid #ff5c5c; }
 
 .f_item.fi_focus .fi_select { display: block; }
+
+.f_item.fi_done { color: #ff5c5c; z-index: 99; }
+
+.f_item.fi_done .fi_answer { border-bottom: 2px solid #ff5c5c; }
+
+.f_item.fi_done .fi_select { display: none; }
 
 .fi_title { line-height: 1.5rem; }
 
@@ -136,7 +142,9 @@ img.f_logo { width: 95px; }
 
 .fi_answer .fi_select .fia:hover { background-color: #f9f9f9; }
 
-.fi_answer input { outline: 0; border: 0; width: 100%; font-size: 0.875rem; font-family: 'Raleway', sans-serif; line-height: 1rem; box-sizing: border-box; margin-top: .4rem; }
+.fi_answer input { outline: 0; border: 0; width: 100%; }
+
+.fia_txt { font-family: 'Raleway', sans-serif; font-size: 0.875rem; line-height: 1rem; box-sizing: border-box; padding-top: .4rem; color: #777777; }
 
 .f_check { padding: 5px 15px; }
 
