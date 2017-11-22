@@ -157,14 +157,11 @@
     color: $text-color;
     height: 72px;
     box-sizing: border-box;
-    &.fi_focus{
+    &.fi_focus,&.fi_must{
         color: $main-color;
         z-index: 999;
         .fi_answer{
             border-bottom: 2px solid $main-color;
-        }
-        .fi_select{
-            display: block;
         }
     }
     &.fi_done{
@@ -235,7 +232,7 @@
     font-size: 0.875rem;
     line-height: 1rem;
     box-sizing: border-box;
-    padding-top: .4rem;
+    padding: .4rem 0;
     color: $text-color;
 }
 
@@ -259,6 +256,7 @@
         height: 1rem;
         border: 1px solid #666666;
         border-radius: .2rem;
+        margin-right: .5rem;
     }
     input[type="checkbox"]:checked+label:before{
         content: '\e64c';
@@ -365,6 +363,14 @@
     }
 }
 
+.icon_star{
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: url(../images/icon_star.png) center center no-repeat;
+    background-size: 100%;
+}
+
 .btn_more{
     display: inline-block;
     width: 3rem;
@@ -430,6 +436,15 @@
         p{
             margin-bottom: .8rem;
         }
+    }
+
+    .fia_txt{
+        padding: .4rem 0 0 0;
+    }
+
+    .icon_star{
+        width: 0.8rem;
+        height: 0.8rem;
     }
 }
 
