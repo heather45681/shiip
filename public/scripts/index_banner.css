@@ -1,0 +1,17 @@
+
+/* Banner */
+#banner .bannerimg img { /*height: 298px;*/ height: auto; max-width: none; width: 100%; position: relative; top: 50%; left: 50%; transform: translate(-50%, 0%); }
+
+/* Select Switch */
+.f_item.fi_focus .fi_select{ display: none; }
+.f_item .fi_select{ display: none; }
+.f_item .fi_select.fi_focus{ display: block; }
+
+@media screen and (max-width:767px) {
+	/* Banner */
+	#slick_banner, #slick_banner .slick-list, #slick_banner .slick-list .slick-track { height: 100%; }
+	#banner .bannerimg img { width: auto; position: absolute; top: 0px; bottom: 0px; left: 0; transform: translate(0%, 0%)}
+	#banner { height: 50vh; overflow: hidden; }
+	#banner .bannerimg { height: 100%; overflow: hidden; position: relative; }
+	#banner .bannerimg img { height: 100%; width: auto; }
+}

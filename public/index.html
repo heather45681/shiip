@@ -6,10 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SHiiP</title>
+    <script type="text/javascript" src="scripts/jquery-1.10.2.min.js"></script>
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/themify-icons.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,400" rel="stylesheet">
     <link rel="stylesheet" href="css/all.css">
+    
+    <script type="text/javascript" src="scripts/header.js"></script>
+    <script src="scripts/base.js"></script>
+    <script src="scripts/check_data/contact.js"></script>
+
+    <script type="text/javascript" src="scripts/index_effect.js"></script>    
+    <!-- slick 1.6.0 -->
+    <script type="text/javascript" src="scripts/slick-1.6.0/slick.min.js"></script>
+    <link href="scripts/slick-1.6.0/slick.css" rel="stylesheet" type="text/css" ></link>
+    <link href="scripts/slick-1.6.0/slick-theme.css" rel="stylesheet" type="text/css" ></link>
+    <!-- Banner -->
+    <script type="text/javascript" src="scripts/index_banner.js"></script>
+    <link href="scripts/index_banner.css" rel="stylesheet" type="text/css" ></link>
+
+    
 </head>
 
 <body>
@@ -85,18 +102,17 @@
     </div>
 
     <div id="banner">
-        <div class="b_slider">
-            <img src="images/banner.jpg" alt="">
+        <div id="slick_banner">
+            <div class="bannerimg"><img src="images/banner-01.jpg" alt=""></div>
+            <div class="bannerimg"><img src="images/banner-02.jpg" alt=""></div>
+            <div class="bannerimg"><img src="images/banner-03.jpg" alt=""></div>
         </div>
         <div class="b_btn">
             <a href="">Learn more</a>
         </div>
         <!-- 進度條 -->
-        <div class="b_bar text_c">
-            <span class="active"></span>
-            <span></span>
-            <span></span>
-        </div>
+        <!-- 進度條 -->
+        <div class="b_bar text_c"></div>
     </div>
 
     <div class="container" id="quote">
@@ -108,7 +124,7 @@
             <form action="">
                 <div class="f_table">
                     <div class="f_block">
-                        <div class="f_item fi_focus">
+                        <div class="f_item fi_focus f_item_select">
                             <!-- 要打開選項+.fi_focus -->
                             <p class="fi_title">From<span>*</span></p>
                             <div class="fi_answer">
@@ -129,7 +145,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="f_item fi_done">
+                        <div class="f_item fi_done f_item_select">
                             <p class="fi_title">To<span>*</span></p>
                             <div class="fi_answer">
                                 <p class="fia_txt">123</p>
@@ -145,7 +161,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="f_item">
+                        <div class="f_item f_item_select">
                             <p class="fi_title">Box Dimenssion<span>*</span></p>
                             <div class="fi_answer">
                                 <p class="fia_txt"></p>
@@ -163,7 +179,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="f_item">
+                        <div class="f_item f_item_select">
                             <p class="fi_title">Boxes<span>*</span></p>
                             <div class="fi_answer">
                                 <p class="fia_txt"></p>
@@ -195,43 +211,43 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="f_item">
+                        <div class="f_item f_item_select">
                             <p class="fi_title">Delivery Date<span>*</span></p>
                             <div class="fi_answer">
                                 <p class="fia_txt"></p>
-                                <i class="icon icon-sm ti-angle-down"></i>
+                                <i class="icon icon-sm ti-calendar"></i>
                                 <div class="fi_select">
-                                    <p>放月曆外掛?</p>
+                                    <p>我是月曆</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="f_block">
-                        <div class="f_item">
+                        <div class="f_item f_item_input">
                             <p class="fi_title">First Name</p>
                             <div class="fi_answer">
                                 <input type="text" class="fia_txt">
                             </div>
                         </div>
-                        <div class="f_item">
+                        <div class="f_item f_item_input">
                             <p class="fi_title">Last Name</p>
                             <div class="fi_answer">
                                 <input type="text" class="fia_txt">
                             </div>
                         </div>
-                        <div class="f_item">
+                        <div class="f_item f_item_input">
                             <p class="fi_title">E-mail</p>
                             <div class="fi_answer">
                                 <input type="text" class="fia_txt">
                             </div>
                         </div>
-                        <div class="f_item">
+                        <div class="f_item f_item_input">
                             <p class="fi_title">Contact Number</p>
                             <div class="fi_answer">
                                 <input type="text" class="fia_txt">
                             </div>
                         </div>
-                        <div class="f_item">
+                        <div class="f_item f_item_input">
                             <p class="fi_title">Coupon Code</p>
                             <div class="fi_answer">
                                 <input type="text" class="fia_txt">
@@ -245,7 +261,7 @@
                     <label for="package"></label>
                     <p>Check here, if you have a package with dimensions other than mentioned above</p>
                 </div>
-                <div class="f_item f_note">
+                <div class="f_item f_note f_item_input">
                     <p class="fi_title">Package Details<span>*</span></p>
                     <div class="fi_answer">
                         <input type="text">
