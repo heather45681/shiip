@@ -7,6 +7,7 @@
 @media screen and (max-width: 1023px){
     @include body--md();
     @include header--md();    
+    @include footer--md();
     @include index--md();
     @include page--md();
 }
@@ -15,10 +16,10 @@
 @media screen and (max-width: 767px){
     @include body--sm();
     @include index--sm();
+    @include page--sm();
 }
 
 //手機 medium screen size (sm_480)
 @media screen and (max-width: 480px){
-    @include index--sm_480();
-    
+    @include index--sm_480();    
 }

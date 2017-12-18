@@ -7,8 +7,27 @@ footer{
         line-height: 1.5rem;
         padding: 3rem 0 0 0;
     }
+    .stress{
+        display: inline-block;
+        background: #fff;
+        color: $main-color;
+        font-size: 28px;
+        padding: 4px 15px;
+        margin: 10px 0;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+    }
 }
 
 img.f_logo{
     width: 95px;
+}
+
+@mixin header--md(){
+    footer{
+        .stress{
+            font-size: 1.25rem;
+        }
+    }
 }
