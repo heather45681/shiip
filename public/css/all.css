@@ -338,9 +338,6 @@ img.f_logo { width: 95px; }
   .blogword .list .tlist{ display:block; }
   .blogword .list .more{ display:block; margin:20px auto 0 auto; }
   
-
-
-
 }
 
 @media screen and (max-width: 480px) { .f_btn { width: 100%; margin: .4rem 0; } }
