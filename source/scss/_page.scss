@@ -244,9 +244,12 @@
 }
 
 .blogTxt {
+    position: relative;
     font-size: 1.125rem;
     line-height: 2rem;
     color: #777;
+    max-height: 384px;
+    overflow: hidden;
 }
 
 .blogMore {
