@@ -28,22 +28,34 @@ header{
         color: $note-color;
         padding: 0 20px;   
         &:nth-child(1){
-            padding: 0 80px 0 0;
+            padding: 0 20px 0 0;
         } 
-        &:nth-child(2){
-            padding: 0 244px 0 0;
-        }
-        &:hover{
-            color: $hover-color;
-            transition: .2s;
-            -webkit-transition: .2s;
-            -moz-transition: .2s;
-        }
+        &:nth-child(5){
+            padding: 0 240px 0 20px;
+        } 
+        &:last-child{
+            padding-right: 60px;
+        } 
         a{
-            display: block;
+            display: inline-block;
             transition: .2s;
             -webkit-transition: .2s;
             -moz-transition: .2s;
+            &:hover{
+                color: $hover-color;
+                transition: .2s;
+                -webkit-transition: .2s;
+                -moz-transition: .2s;
+            }
+        }
+        .ti-facebook{
+            color: #3b5998;
+            &:hover{
+                color: $hover-color;
+                transition: .2s;
+                -webkit-transition: .2s;
+                -moz-transition: .2s;
+            }
         }
     }
 }
@@ -62,7 +74,7 @@ header{
     display: none;
 }
 
-@mixin header--sm(){
+@mixin header--md(){
     header{
         height: auto;
     }
@@ -98,6 +110,15 @@ header{
                 transition: .2s;
                 -webkit-transition: .2s;
                 -moz-transition: .2s;
+                &:hover{
+                    color: $hover-color;
+                    transition: .2s;
+                    -webkit-transition: .2s;
+                    -moz-transition: .2s;
+                }
+            }
+            .ti-facebook{
+                color: #3b5998;
                 &:hover{
                     color: $hover-color;
                     transition: .2s;

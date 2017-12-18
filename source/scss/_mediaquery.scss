@@ -6,6 +6,7 @@
 //平板 medium screen size (md)
 @media screen and (max-width: 1023px){
     @include body--md();
+    @include header--md();    
     @include index--md();
     @include page--md();
 }
@@ -13,7 +14,6 @@
 //手機 medium screen size (sm)
 @media screen and (max-width: 767px){
     @include body--sm();
-    @include header--sm();
     @include index--sm();
 }
 
